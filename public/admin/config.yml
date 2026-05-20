@@ -1,0 +1,69 @@
+backend:
+  name: github
+  repo: obnm-beatpioneer/beatpioneer-website
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: it
+
+i18n:
+  structure: multiple_folders
+  locales: [it, de, en]
+  default_locale: it
+
+collections:
+  - name: "pages"
+    label: "Pagine"
+    files:
+      - file: "src/content/pages/home.json"
+        label: "Home"
+        name: "home"
+        i18n: true
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", i18n: true }
+          - { label: "Titolo", name: "title", widget: "string", i18n: true }
+          - { label: "Sottotitolo", name: "subtitle", widget: "string", i18n: true }
+          - { label: "Intro", name: "intro", widget: "text", i18n: true }
+          - { label: "CTA testo", name: "cta", widget: "string", i18n: true }
+          - { label: "CTA URL", name: "ctaUrl", widget: "string", i18n: "duplicate" }
+
+      - file: "src/content/pages/bio.json"
+        label: "Bio"
+        name: "bio"
+        i18n: true
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", i18n: true }
+          - { label: "Titolo", name: "title", widget: "string", i18n: true }
+          - label: "Paragrafi"
+            name: "body"
+            widget: "list"
+            i18n: true
+            field: { label: "Paragrafo", name: "text", widget: "text" }
+
+      - file: "src/content/pages/studio.json"
+        label: "Studio (Pioneer Sound Lab)"
+        name: "studio"
+        i18n: true
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", i18n: true }
+          - { label: "Titolo", name: "title", widget: "string", i18n: true }
+          - label: "Paragrafi"
+            name: "body"
+            widget: "list"
+            i18n: true
+            field: { label: "Paragrafo", name: "text", widget: "text" }
+
+  - name: "testimonials"
+    label: "Testimonianze"
+    folder: "src/content/testimonials"
+    create: true
+    slug: "{{name | slug}}"
+    i18n: true
+    fields:
+      - { label: "Nome", name: "name", widget: "string", i18n: "duplicate" }
+      - { label: "Ruolo", name: "role", widget: "string", i18n: "duplicate" }
+      - { label: "Citazione", name: "quote", widget: "text", i18n: true }
+      - { label: "Ordine", name: "order", widget: "number", default: 1, i18n: "duplicate" }

@@ -1,0 +1,30 @@
+---
+import { getLangFromUrl, useTranslations, type Lang } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url) as Lang;
+const t = useTranslations(lang);
+---
+<section id="studio" class="section studio">
+  <div class="container-narrow">
+    <p class="eyebrow">{t.studio.eyebrow}</p>
+    <h2 class="title">{t.studio.title}</h2>
+    <div class="studio-body">
+      {t.studio.body.map((p) => <p>{p}</p>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .studio { border-top: 1px solid var(--color-border); }
+  .title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-variation-settings: "opsz" 144;
+  }
+  .studio-body p {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-fg);
+    margin-bottom: 20px;
+  }
+</style>

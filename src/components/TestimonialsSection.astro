@@ -1,0 +1,97 @@
+---
+import { getLangFromUrl, useTranslations, type Lang } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url) as Lang;
+const t = useTranslations(lang);
+
+const testimonials = [
+  {
+    name: 'Matsby',
+    role: 'Singer Songwriter',
+    quote_it: 'Lavorare con Oscar nel suo home studio mi ha permesso di prepararmi alle audizioni di X-Factor. Entschlossenheit und Methodik. Professionalità e lato umano.',
+    quote_de: 'Die Arbeit mit Oscar in seinem Homestudio hat mir geholfen, mich auf die X-Factor Auditions vorzubereiten. Entschlossenheit und Methodik. Professionalität und Menschlichkeit.',
+    quote_en: 'Working with Oscar in his home studio helped me prepare for the X-Factor auditions. Determination and method. Professionalism and humanity.',
+  },
+  {
+    name: 'Samuele Longo',
+    role: 'Singer, Songwriter',
+    quote_it: 'Mentore e amico prezioso. Ambiente di lavoro calmo e collaborativo, sensibilità artistica, onestà intellettuale. Il risultato di "Introspection" ha superato le mie aspettative.',
+    quote_de: 'Mentor und wertvoller Freund. Ruhige und kollaborative Arbeitsumgebung, künstlerische Sensibilität, intellektuelle Ehrlichkeit. Das Ergebnis von "Introspection" hat meine Erwartungen übertroffen.',
+    quote_en: 'Mentor and precious friend. Calm and collaborative work environment, artistic sensitivity, intellectual honesty. The result of "Introspection" exceeded my expectations.',
+  },
+  {
+    name: 'Carnival Corpse',
+    role: 'Singer, Songwriter',
+    quote_it: 'Comunicazione onesta, struttura chiara, affidabilità, carattere accogliente. Dalla collaborazione su "Mutter Erde" sono nate due versioni del brano. Aperto e creativo.',
+    quote_de: 'Ehrliche Kommunikation, klare Struktur, Zuverlässigkeit, einladender Charakter. Aus der Zusammenarbeit an "Mutter Erde" sind zwei Versionen des Stücks entstanden. Offen und kreativ.',
+    quote_en: 'Honest communication, clear structure, reliability, welcoming character. From the collaboration on "Mutter Erde" two versions of the track were born. Open and creative.',
+  },
+  {
+    name: 'DavideGSax',
+    role: 'Musician, Performer',
+    quote_it: 'Collaborazione pluriennale. Mi ha supportato nel mix dei brani, ha seguito i miei live e dato feedback su performance, regia scenica e immagine esterna. Grande capacità di ascolto.',
+    quote_de: 'Mehrjährige Zusammenarbeit. Er hat mich beim Mix der Songs unterstützt, meine Live-Auftritte begleitet und Feedback zu Performance, Inszenierung und Außenwirkung gegeben. Große Hörfähigkeit.',
+    quote_en: 'Multi-year collaboration. He supported me in mixing tracks, followed my live shows and gave feedback on performance, staging and external image. Great listening ability.',
+  },
+];
+
+const quoteKey = `quote_${lang}` as 'quote_it' | 'quote_de' | 'quote_en';
+---
+<section id="testimonials" class="section testimonials">
+  <div class="container-narrow">
+    <p class="eyebrow">{t.testimonials.eyebrow}</p>
+    <h2 class="title">{t.testimonials.title}</h2>
+    <div class="grid">
+      {testimonials.map((person) => (
+        <article class="card">
+          <blockquote>"{person[quoteKey]}"</blockquote>
+          <footer>
+            <div class="name">{person.name}</div>
+            <div class="role">{person.role}</div>
+          </footer>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials { border-top: 1px solid var(--color-border); }
+  .title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 48px;
+    font-weight: 500;
+    font-variation-settings: "opsz" 144;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 32px 28px;
+  }
+  blockquote {
+    font-family: var(--font-display);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    font-style: italic;
+    color: var(--color-fg);
+    margin-bottom: 24px;
+    font-variation-settings: "opsz" 36;
+  }
+  footer { border-top: 1px solid var(--color-border); padding-top: 16px; }
+  .name {
+    font-weight: 500;
+    color: var(--color-accent);
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  .role {
+    font-size: 0.8rem;
+    color: var(--color-fg-dim);
+    letter-spacing: 0.04em;
+  }
+</style>

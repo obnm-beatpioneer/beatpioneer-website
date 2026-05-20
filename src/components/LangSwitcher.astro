@@ -1,0 +1,44 @@
+---
+import { languages, getLangFromUrl, type Lang } from '../i18n/utils';
+
+const currentLang = getLangFromUrl(Astro.url) as Lang;
+const path = Astro.url.pathname.replace(/^\/(it|de|en)\//, '/').replace(/^\/(it|de|en)$/, '/');
+---
+<div class="lang-switcher">
+  {Object.entries(languages).map(([code, name]) => {
+    const href = code === 'it' ? path : `/${code}${path === '/' ? '' : path}`;
+    return (
+      <a
+        href={href}
+        class:list={['lang', { active: code === currentLang }]}
+        aria-current={code === currentLang ? 'true' : 'false'}
+      >
+        {code.toUpperCase()}
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  .lang-switcher {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+  .lang {
+    padding: 4px 8px;
+    color: var(--color-fg-dim);
+    transition: color 0.2s ease;
+    font-weight: 500;
+  }
+  .lang:hover, .lang.active {
+    color: var(--color-accent);
+  }
+  .lang.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
+</style>

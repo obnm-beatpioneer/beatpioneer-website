@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /de/
+Allow: /en/
+Disallow: /admin/
+Disallow: /demo/
+
+Sitemap: https://beatpioneer.com/sitemap-index.xml

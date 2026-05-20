@@ -1,0 +1,22 @@
+# Vecchie pagine WordPress → Home corrispondente
+/contatti       /             301
+/contatti/      /             301
+/bio            /#bio         301
+/bio/           /#bio         301
+/pioneer-sound-lab    /#studio       301
+/pioneer-sound-lab/   /#studio       301
+/dicono-di-me   /#testimonials 301
+/dicono-di-me/  /#testimonials 301
+/obnm_hyperpop_music_project   /demo/   301
+/obnm_hyperpop_music_project/  /demo/   301
+
+/de/contatti    /de/          301
+/de/contatti/   /de/          301
+/de/bio         /de/#bio      301
+/de/bio/        /de/#bio      301
+/de/pioneer-sound-lab    /de/#studio  301
+/de/pioneer-sound-lab/   /de/#studio  301
+/de/dicono-di-me    /de/#testimonials  301
+/de/dicono-di-me/   /de/#testimonials  301
+/de/obnm_hyperpop_music_project   /demo/   301
+/de/obnm_hyperpop_music_project/  /demo/   301
