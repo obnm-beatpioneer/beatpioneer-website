@@ -14,9 +14,9 @@ const t = useTranslations(lang);
       {t.studio.body.map((p) => <p>{p}</p>)}
     </div>
     <div class="studio-gallery" role="presentation">
-      <div class="studio-tile" style="background: url('/assets/studio-1.jpg') center/cover no-repeat;" aria-hidden="true"></div>
-      <div class="studio-tile" style="background: url('/assets/studio-2.jpg') center/cover no-repeat;" aria-hidden="true"></div>
-      <div class="studio-tile" style="background: url('/assets/studio-3.jpg') center/cover no-repeat;" aria-hidden="true"></div>
+      <div class="studio-tile studio-tile-1" aria-hidden="true"></div>
+      <div class="studio-tile studio-tile-2" aria-hidden="true"></div>
+      <div class="studio-tile studio-tile-3" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -58,7 +58,13 @@ const t = useTranslations(lang);
     width: 100%;
     border-radius: var(--radius-card);
     background-color: var(--color-bg-card);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
+  .studio-tile-1 { background-image: url(/assets/studio-1.jpg) !important; }
+  .studio-tile-2 { background-image: url(/assets/studio-2.jpg) !important; }
+  .studio-tile-3 { background-image: url(/assets/studio-3.jpg) !important; }
   @media (max-width: 820px) {
     .studio-gallery {
       grid-template-columns: 1fr;
