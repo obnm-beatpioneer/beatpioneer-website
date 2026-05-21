@@ -11,7 +11,7 @@ const t = useTranslations(lang);
   <div class="container-narrow hero-content">
     <p class="eyebrow">{t.home.eyebrow}</p>
     <h1 class="hero-title">{t.home.title}</h1>
-    <p class="hero-subtitle">{t.home.subtitle}</p>
+    {t.home.subtitle && <p class="hero-subtitle">{t.home.subtitle}</p>}
     <div class="hero-intro">
       {t.home.intro.map((p) => <p>{p}</p>)}
     </div>
@@ -25,9 +25,12 @@ const t = useTranslations(lang);
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 240px;
     padding-bottom: 80px;
     overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .hero { padding-top: 180px; }
   }
   .hero-bg {
     position: absolute;
@@ -74,8 +77,4 @@ const t = useTranslations(lang);
   .hero-intro p {
     font-size: 1.0625rem;
     line-height: 1.7;
-    color: var(--color-fg-dim);
-    margin-bottom: 16px;
-    max-width: 580px;
-  }
-</style>
+   

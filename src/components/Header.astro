@@ -54,10 +54,11 @@ const home = getLocalizedPath(lang);
     color: var(--color-fg);
   }
   .brand-logo {
-    width: 96px;
-    height: 96px;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
     display: block;
+    border-radius: 50%;
   }
   .brand:hover .brand-name { color: var(--color-accent); }
   .nav-links {
@@ -77,6 +78,4 @@ const home = getLocalizedPath(lang);
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .nav { padding: 14px 20px; }
-    .brand-logo { width: 72px; height: 72px; }
-  }
-</style>
+    .brand-logo { width: 56px; heigh

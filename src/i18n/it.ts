@@ -9,12 +9,12 @@ export default {
   home: {
     eyebrow: 'BeatPioneer',
     title: 'Benvenuto in BeatPioneer',
-    subtitle: 'Dove i sogni musicali prendono vita. Il tuo futuro è ora.',
+    subtitle: '',
     intro: [
-      'Fai musica? Vuoi plasmare il tuo sound e toccare il cuore del tuo pubblico?',
-      'Scopri la tua vera essenza artistica. Diventa un\'icona e dai voce alla tua unicità. Non sei come tutti gli altri, e hai il diritto di farti sentire.',
-      'Non accontentarti di piacere a tutti. Sii audace! Trova la tua tribù, quella che vibra con la tua musica e condivide i tuoi sogni. Ti guiderò in un viaggio nel cuore della tua arte.',
-      'Se hai la passione, la determinazione e la voglia di fare sul serio, BeatPioneer ti aspetta. Insieme faremo risuonare la tua voce nel mondo musicale.',
+      'Fai musica. Hai un sound dentro che cerca forma e direzione. Non ti serve un altro corso che promette di renderti un\'icona. Ti serve qualcuno che ascolti il tuo brano e ti aiuti a costruirlo davvero.',
+      'Lavoro con te in pre-produzione. Direzione artistica, sviluppo dell\'identità musicale, scelte sonore, strategia live: il percorso che trasforma un\'idea in un progetto sostenibile.',
+      'Non per piacere a tutti, ma per trovare le persone che ascoltano davvero. Quelle che vibrano con quello che fai.',
+      'Se vuoi costruire qualcosa di vero, un brano, un\'identità, un progetto, BeatPioneer è il posto. Si parte da qui. Io sono OBNM.',
     ],
   },
   bio: {
@@ -81,5 +81,3 @@ export default {
     tagline: 'Built Your Music Identity',
     rights: 'Tutti i diritti riservati',
     location: 'Hamburg',
-  },
-};
