@@ -13,11 +13,9 @@ const t = useTranslations(lang);
     <div class="studio-body">
       {t.studio.body.map((p) => <p>{p}</p>)}
     </div>
-    <div class="studio-gallery">
-      <img src="/assets/studio-1.jpg" alt="" aria-hidden="true" loading="lazy" />
-      <img src="/assets/studio-2.jpg" alt="" aria-hidden="true" loading="lazy" />
-      <img src="/assets/studio-3.jpg" alt="" aria-hidden="true" loading="lazy" />
-    </div>
+    <figure class="studio-feature">
+      <img src="/assets/Hero-2.jpg" alt="" aria-hidden="true" loading="lazy" />
+    </figure>
   </div>
 </section>
 
@@ -46,5 +44,14 @@ const t = useTranslations(lang);
     color: var(--color-fg);
     margin-bottom: 20px;
     max-width: 720px;
+  }
+  .studio-feature {
+    margin: 56px 0 0;
+  }
+  .studio-feature img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-card);
+    display: block;
   }
 </style>
