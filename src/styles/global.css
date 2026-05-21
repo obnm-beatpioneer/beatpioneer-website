@@ -97,6 +97,27 @@ a {
   color: #1a1100;
 }
 
+/* Studio gallery tiles: forced layout to bypass Tailwind preflight on img */
+.studio-gallery .studio-tile {
+  position: relative !important;
+  aspect-ratio: 3 / 4 !important;
+  width: 100% !important;
+  border-radius: var(--radius-card) !important;
+  overflow: hidden !important;
+  background-color: var(--color-bg-card) !important;
+}
+.studio-gallery .studio-tile img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
 @media (max-width: 640px) {
   .section { padding-top: 64px; padding-bottom: 64px; }
 }
