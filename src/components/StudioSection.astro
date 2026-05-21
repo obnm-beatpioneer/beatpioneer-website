@@ -14,9 +14,9 @@ const t = useTranslations(lang);
       {t.studio.body.map((p) => <p>{p}</p>)}
     </div>
     <div class="studio-gallery" role="presentation">
-      <div class="studio-tile" style="background-image: url('/assets/studio-1.jpg')" aria-hidden="true"></div>
-      <div class="studio-tile" style="background-image: url('/assets/studio-2.jpg')" aria-hidden="true"></div>
-      <div class="studio-tile" style="background-image: url('/assets/studio-3.jpg')" aria-hidden="true"></div>
+      <div class="studio-tile" style="background: url('/assets/studio-1.jpg') center/cover no-repeat;" aria-hidden="true"></div>
+      <div class="studio-tile" style="background: url('/assets/studio-2.jpg') center/cover no-repeat;" aria-hidden="true"></div>
+      <div class="studio-tile" style="background: url('/assets/studio-3.jpg') center/cover no-repeat;" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -56,9 +56,6 @@ const t = useTranslations(lang);
   .studio-tile {
     aspect-ratio: 3 / 4;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: var(--radius-card);
     background-color: var(--color-bg-card);
   }
