@@ -8,7 +8,10 @@ const home = getLocalizedPath(lang);
 ---
 <header class="header">
   <nav class="nav">
-    <a href={home} class="brand">BeatPioneer</a>
+    <a href={home} class="brand">
+      <img src="/assets/logo-obnm.png" alt="OBNM" class="brand-logo" />
+      <span class="brand-name">BeatPioneer</span>
+    </a>
     <ul class="nav-links">
       <li><a href={`${home}#bio`}>{t.nav.bio}</a></li>
       <li><a href={`${home}#studio`}>{t.nav.studio}</a></li>
@@ -41,13 +44,22 @@ const home = getLocalizedPath(lang);
     gap: 24px;
   }
   .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-family: var(--font-display);
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     color: var(--color-fg);
   }
-  .brand:hover { color: var(--color-accent); }
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+  }
+  .brand:hover .brand-name { color: var(--color-accent); }
   .nav-links {
     list-style: none;
     margin: 0;
@@ -65,5 +77,6 @@ const home = getLocalizedPath(lang);
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .nav { padding: 14px 20px; }
+    .brand-logo { width: 32px; height: 32px; }
   }
 </style>

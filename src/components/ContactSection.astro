@@ -4,31 +4,47 @@ import SocialIcons from './SocialIcons.astro';
 const lang = getLangFromUrl(Astro.url) as Lang;
 const t = useTranslations(lang);
 ---
-<section id="contact" class="section contact">
-  <div class="container-narrow contact-layout">
-    <div class="contact-text">
-      <p class="eyebrow">{t.contact.eyebrow}</p>
-      <h2 class="title">{t.contact.title}</h2>
-      <p class="body">{t.contact.body}</p>
-      <a href={`mailto:${t.contact.email}`} class="email-display">{t.contact.email}</a>
-      <SocialIcons />
-    </div>
-    <figure class="contact-image">
-      <img src="/assets/Contact.jpg" alt="" aria-hidden="true" loading="lazy" />
-    </figure>
+<section id="contact" class="contact">
+  <div class="contact-bg">
+    <img src="/assets/Hero-1.jpg" alt="" aria-hidden="true" loading="lazy" />
+    <div class="contact-overlay"></div>
+  </div>
+  <div class="container-narrow contact-content">
+    <p class="eyebrow">{t.contact.eyebrow}</p>
+    <h2 class="title">{t.contact.title}</h2>
+    <p class="body">{t.contact.body}</p>
+    <a href={`mailto:${t.contact.email}`} class="email-display">{t.contact.email}</a>
+    <SocialIcons />
   </div>
 </section>
 
 <style>
   .contact {
+    position: relative;
+    padding: 120px 0 100px;
     border-top: 1px solid var(--color-border);
-    padding-bottom: 80px;
+    overflow: hidden;
   }
-  .contact-layout {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 56px;
-    align-items: center;
+  .contact-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .contact-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(15%) contrast(1.05);
+  }
+  .contact-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10,10,10,0.78) 0%, rgba(10,10,10,0.92) 100%);
+  }
+  .contact-content {
+    position: relative;
+    z-index: 1;
   }
   .title {
     font-size: clamp(2rem, 5vw, 3rem);
@@ -41,7 +57,7 @@ const t = useTranslations(lang);
     line-height: 1.7;
     color: var(--color-fg);
     margin-bottom: 36px;
-    max-width: 480px;
+    max-width: 560px;
   }
   .email-display {
     display: inline-block;
@@ -59,22 +75,5 @@ const t = useTranslations(lang);
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-thickness: 1px;
-  }
-  .contact-image {
-    margin: 0;
-  }
-  .contact-image img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-card);
-    display: block;
-    filter: grayscale(10%);
-  }
-  @media (max-width: 820px) {
-    .contact-layout {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-    .contact-image { order: -1; }
   }
 </style>
