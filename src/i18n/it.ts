@@ -12,7 +12,7 @@ export default {
     subtitle: '',
     intro: [
       'Fai musica. Hai un sound dentro che cerca forma e direzione. Non ti serve un altro corso che promette di renderti un\'icona. Ti serve qualcuno che ascolti il tuo brano e ti aiuti a costruirlo davvero.',
-      'Lavoro con te in pre-produzione. Direzione artistica, sviluppo dell\'identità musicale, scelte sonore, strategia live: il percorso che trasforma un\'idea in un progetto sostenibile.',
+      'Lavoro con te in pre-produzione. Direzione artistica, sviluppo dell\'identità musicale, scelte sonore, strategia live, il percorso che trasforma un\'idea in un progetto sostenibile.',
       'Non per piacere a tutti, ma per trovare le persone che ascoltano davvero. Quelle che vibrano con quello che fai.',
       'Se vuoi costruire qualcosa di vero, un brano, un\'identità, un progetto, BeatPioneer è il posto. Si parte da qui. Io sono OBNM.',
     ],
@@ -67,7 +67,7 @@ export default {
         name: 'Carnival Corpse',
         role: 'Cantante, Songwriter',
         photo: '/assets/Carnival-Corps.jpg',
-        quote: 'Consiglio vivamente Oscar a tutti gli artisti che cercano qualcuno di aperto e creativo. Comunicazione sincera, struttura chiara, affidabilità e un carattere amichevole. Durante la registrazione di "Mutter Erde" ho trovato un grande sostenitore, capace di convincere con le sue idee, attento alle visioni dell\'artista. Sono nate due versioni del brano, una più fedele al live e una Beat Pioneer version dove abbiamo dato libero sfogo alla creatività comune.',
+        quote: 'Consiglio vivamente Oscar a tutti gli artisti che cercano qualcuno di aperto e creativo. Comunicazione sincera, struttura chiara, affidabilità e un carattere amichevole. Durante la registrazione di "Mutter Erde" ho trovato un grande sostenitore, capace di convincere con le sue idee, attento alle visioni dell\'artista. Sono nate due versioni del brano, una più fedele al live e una BeatPioneer version dove abbiamo dato libero sfogo alla creatività comune.',
       },
     ],
   },
@@ -81,3 +81,5 @@ export default {
     tagline: 'Built Your Music Identity',
     rights: 'Tutti i diritti riservati',
     location: 'Hamburg',
+  },
+};
