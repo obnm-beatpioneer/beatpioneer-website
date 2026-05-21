@@ -2,6 +2,8 @@
 import { getLangFromUrl, useTranslations, type Lang } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url) as Lang;
 const t = useTranslations(lang);
+
+const tileImgStyle = "position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;max-width:none !important;object-fit:cover !important;object-position:center !important;display:block !important;";
 ---
 <section id="studio" class="section studio">
   <div class="container-narrow">
@@ -15,13 +17,13 @@ const t = useTranslations(lang);
     </div>
     <div class="studio-gallery">
       <div class="studio-tile">
-        <img src="/assets/studio-1.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/assets/studio-1.jpg" alt="" aria-hidden="true" loading="lazy" style={tileImgStyle} />
       </div>
       <div class="studio-tile">
-        <img src="/assets/studio-2.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/assets/studio-2.jpg" alt="" aria-hidden="true" loading="lazy" style={tileImgStyle} />
       </div>
       <div class="studio-tile">
-        <img src="/assets/studio-3.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/assets/studio-3.jpg" alt="" aria-hidden="true" loading="lazy" style={tileImgStyle} />
       </div>
     </div>
   </div>
@@ -66,17 +68,6 @@ const t = useTranslations(lang);
     border-radius: var(--radius-card);
     overflow: hidden;
     background-color: var(--color-bg-card);
-  }
-  .studio-tile img {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    display: block !important;
   }
   @media (max-width: 820px) {
     .studio-gallery {
