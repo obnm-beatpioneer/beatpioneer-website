@@ -68,7 +68,7 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
               scrolling="no"
               frameborder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/oscar-bonomi&color=%23FF1493&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/oscar-bonomi/sets/demo-music-project/s-xdQ5TxgxZLZ&color=%23ff1493&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
               title="OBNM HyperPop Music Project on SoundCloud"
               loading="lazy"
             ></iframe>
@@ -106,7 +106,7 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
 
     <footer class="demo-footer">
       <div class="footer-inner">
-        <a href="/" class="brand brand-small">
+        <a href="/" class="brand">
           <img src="/assets/logo-obnm.png" alt="OBNM" class="brand-logo" />
           <span class="brand-name">BeatPioneer</span>
         </a>
@@ -178,34 +178,35 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
         border-bottom: 1px solid rgba(255, 20, 147, 0.2);
-        padding: 10px 24px;
+        padding: 4px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
       }
       .demo-header .brand {
         display: inline-flex;
         align-items: center;
         gap: 0;
         font-family: var(--font-display);
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         font-weight: 600;
         color: var(--highlight);
         letter-spacing: -0.01em;
+        min-width: 0;
       }
       .demo-header .brand-logo {
-        width: 44px;
-        height: 44px;
+        width: 192px;
+        height: 192px;
         object-fit: contain;
         display: block;
         border-radius: 50%;
         border: 1px solid var(--neon-cyan);
         box-shadow: 0 0 16px rgba(255, 20, 147, 0.35);
+        flex-shrink: 0;
       }
       .demo-header .brand-name { white-space: nowrap; }
-      .demo-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 100%;
-      }
+      .demo-header .brand:hover .brand-name { color: var(--neon-cyan); }
       .header-nav {
         display: flex;
         gap: 22px;
@@ -225,7 +226,7 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
 
       /* HERO */
       .hero {
-        padding: 120px 24px 80px;
+        padding: 240px 24px 80px;
       }
       .hero-grid {
         max-width: 1160px;
@@ -263,10 +264,11 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
         border-radius: 10px;
       }
       .hero-text h1 {
-        font-size: clamp(2.5rem, 5.5vw, 3.75rem);
+        font-size: clamp(2.25rem, 5vw, 3.25rem);
         font-weight: 700;
         font-variation-settings: "opsz" 144;
         margin: 0 0 24px;
+        line-height: 1.05;
       }
       .hero-text h1 .line {
         display: block;
@@ -398,11 +400,13 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
       .demo-footer {
         background: var(--dark-base);
         border-top: 1px solid var(--neon-magenta);
-        padding: 12px 24px;
+        padding: 16px 0 14px;
+        margin-top: 24px;
       }
       .footer-inner {
         max-width: 1160px;
         margin: 0 auto;
+        padding: 0 24px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -414,18 +418,19 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
         align-items: center;
         gap: 0;
         font-family: var(--font-display);
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 600;
         color: var(--neon-cyan);
         letter-spacing: -0.01em;
       }
       .footer-inner .brand-logo {
-        width: 36px;
-        height: 36px;
+        width: 192px;
+        height: 192px;
         object-fit: contain;
         display: block;
         border-radius: 50%;
         border: 1px solid var(--neon-cyan);
+        flex-shrink: 0;
       }
       .footer-inner .brand:hover .brand-name { color: var(--neon-magenta); }
       .footer-inner .legal {
@@ -437,25 +442,30 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
 
       /* RESPONSIVE */
       @media (max-width: 900px) {
-        .hero { padding: 100px 20px 60px; }
+        .hero { padding: 180px 20px 60px; }
         .hero-grid {
           grid-template-columns: 1fr;
           gap: 40px;
         }
         .hero-portrait { max-width: 480px; margin: 0 auto; }
       }
-      @media (max-width: 600px) {
-        .demo-header { padding: 8px 14px; }
-        .demo-header .brand-logo { width: 36px; height: 36px; }
+      @media (max-width: 768px) {
+        .demo-header { padding: 4px 12px; gap: 8px; }
+        .demo-header .brand-logo { width: 56px; height: 56px; }
         .demo-header .brand-name { font-size: 1rem; }
-        .header-nav { gap: 14px; font-size: 0.7rem; }
-        .hero { padding: 90px 18px 50px; }
-        .hero-text h1 { font-size: clamp(2rem, 9vw, 2.5rem); }
+        .footer-inner .brand-logo { width: 56px; height: 56px; }
+        .footer-inner .brand-name { font-size: 1rem; }
+        .hero { padding: 140px 18px 50px; }
         .player { padding: 56px 0; }
         .player-frame iframe { height: 360px; }
         .cta { padding: 64px 0 80px; }
         .footer-inner { justify-content: center; text-align: center; }
         .footer-inner .legal { font-size: 0.65rem; }
+      }
+      @media (max-width: 380px) {
+        .demo-header .brand-logo { width: 44px; height: 44px; }
+        .demo-header .brand-name { font-size: 0.9rem; }
+        .footer-inner .brand-logo { width: 44px; height: 44px; }
       }
     </style>
   </body>
