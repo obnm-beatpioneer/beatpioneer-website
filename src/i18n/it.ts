@@ -37,7 +37,6 @@ export default {
       'Certo, esistono registrazioni riuscite e registrazioni meno riuscite. Ma ogni tanto accade qualcosa che va oltre la tecnica. Una take catturata al volo, fragile, imperfetta, viva. Quella che non riesci più a replicare perché apparteneva esattamente a quel momento.',
       'L\'home studio serve anche a questo, creare lo spazio perché quei momenti possano accadere. Senza fretta, senza aspettative, senza qualcuno che guarda l\'orologio. Solo tu, la tua musica e la libertà di cercare. E a volte, proprio lì dentro, nasce la magia.',
       'Come musicista e produttore, il mio concetto di studio è chiaro, deve essere uno spazio dove si scrive, si registra e si produce musica nel comfort e nel relax di una vera casa. Un ambiente che non può prescindere da trattamenti acustici adeguati e da attrezzature analogiche e digitali di alto livello per lavorare al meglio.',
-      'Sono sempre aperto a collaborazioni esterne e a lavorare in studi diversi, che siano grotte, sottomarini, stanzette o soffitte. Il luogo può influenzare, ma alla fine il pezzo che andrai a scrivere ce l\'hai in testa.',
       'Questa è la mia visione dello studio, un ambiente dove creatività e comfort si incontrano, dove l\'errore è visto come un\'opportunità e dove ogni sessione di lavoro può trasformarsi in un momento di crescita e scoperta.',
     ],
   },
