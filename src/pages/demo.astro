@@ -69,6 +69,9 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
               loading="lazy"
             ></iframe>
           </div>
+          <p class="player-fallback">
+            Player not loading? <a href="https://soundcloud.com/oscar-bonomi/sets/demo-music-project/s-xdQ5TxgxZLZ" target="_blank" rel="noopener noreferrer">Open the playlist directly on SoundCloud</a>.
+          </p>
         </div>
       </section>
 
@@ -283,6 +286,20 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
         width: 100%;
         border: 0;
       }
+      .player-fallback {
+        margin: 16px 0 0;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+      }
+      .player-fallback a {
+        color: var(--neon-cyan);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      .player-fallback a:hover {
+        color: var(--neon-magenta);
+      }
 
       /* CTA */
       .cta {
@@ -292,11 +309,15 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
       }
       .cta .container { max-width: 720px; }
       .cta h2 {
-        font-size: clamp(2.25rem, 5vw, 3.25rem);
-        font-weight: 700;
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+        font-weight: 400;
+        font-style: italic;
+        font-variation-settings: "opsz" 72;
         color: var(--neon-magenta);
         text-shadow: 0 0 24px rgba(255, 20, 147, 0.35);
         margin: 0 0 24px;
+        white-space: nowrap;
       }
       .cta-body {
         font-size: 1.0625rem;
@@ -321,20 +342,21 @@ const description = 'OBNM HyperPop Music Project. I do not just produce music. I
       }
       .cta-tagline {
         font-family: var(--font-display);
-        font-size: clamp(2.25rem, 5vw, 3.25rem);
-        font-weight: 700;
-        line-height: 1.05;
-        letter-spacing: -0.01em;
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.3;
+        letter-spacing: 0.01em;
         margin: 0 0 48px;
-        font-variation-settings: "opsz" 144;
+        font-variation-settings: "opsz" 72;
       }
       .cta-tagline .tagline-line {
         display: block;
         color: var(--highlight);
+        white-space: nowrap;
       }
       .cta-tagline .tagline-line.accent {
         color: var(--neon-magenta);
-        font-style: italic;
         text-shadow: 0 0 24px rgba(255, 20, 147, 0.4);
       }
       .social {
