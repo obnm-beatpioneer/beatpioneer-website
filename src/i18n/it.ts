@@ -22,7 +22,7 @@ export default {
     title: 'Chi sono',
     body: [
       'Mi chiamo Oscar, conosciuto anche come OBNM, e il mio viaggio musicale attraversa i mondi del pop, dell\'elettronica, del folk e del rock.',
-      'Ho approfondito le mie conoscenze con lo studio (DAMS) della Black Music e sono stato ispirato dalla rivoluzione della musica digitale (Master DTV).',
+      'Ho approfondito le mie conoscenze con lo studio della Black Music (DAMS) e sono stato ispirato dalla rivoluzione della musica digitale (Master DTV).',
       'Suono la chitarra e, con oltre 20 anni di esperienza, sono un produttore musicale e professionista nell\'industria musicale. Le mie competenze si sono arricchite grazie a numerose esperienze nel campo della produzione audio.',
       'Ho lavorato come chitarrista, DJ, sound designer e tecnico audio per film indipendenti, programmi televisivi (Rai 2), serie animate (Gino il Pollo) e trasmissioni radiofoniche (Radio 3). Da più di 15 anni faccio parte del team di Steinberg Multimedia Technologies, dove aiuto musicisti e produttori a sfruttare al meglio i software per realizzare produzioni musicali.',
       'La musica per me è molto più di un lavoro, è uno strumento di crescita personale e la linfa vitale del mio percorso.',
@@ -42,7 +42,7 @@ export default {
   },
   testimonials: {
     eyebrow: 'Dicono di me',
-    title: 'Le persone con cui ho lavorato',
+    title: 'Gli artisti con cui ho lavorato',
     items: [
       {
         name: 'Matsby',
@@ -77,7 +77,7 @@ export default {
     email: 'info@beatpioneer.com',
   },
   footer: {
-    tagline: 'Built Your Music Identity',
+    tagline: 'Build Your Music Identity',
     rights: 'Tutti i diritti riservati',
     location: 'Hamburg',
   },
