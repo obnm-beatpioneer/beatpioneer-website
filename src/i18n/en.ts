@@ -3,7 +3,7 @@ export default {
     home: 'Home',
     bio: 'Bio',
     studio: 'Studio',
-    testimonials: 'About me',
+    testimonials: 'Testimonials',
     contact: 'Contact',
   },
   home: {
@@ -77,7 +77,7 @@ export default {
     email: 'info@beatpioneer.com',
   },
   footer: {
-    tagline: 'Built Your Music Identity',
+    tagline: 'Build Your Music Identity',
     rights: 'All rights reserved',
     location: 'Hamburg',
   },
