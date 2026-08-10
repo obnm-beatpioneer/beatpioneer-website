@@ -41,7 +41,7 @@ export default {
     ],
   },
   testimonials: {
-    eyebrow: 'About me',
+    eyebrow: 'Testimonials',
     title: 'Artists I\'ve worked with',
     items: [
       {
