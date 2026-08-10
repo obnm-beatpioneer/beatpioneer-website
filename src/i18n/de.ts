@@ -3,7 +3,7 @@ export default {
     home: 'Home',
     bio: 'Bio',
     studio: 'Studio',
-    testimonials: 'Über mich',
+    testimonials: 'Referenzen',
     contact: 'Kontakt',
   },
   home: {
@@ -23,8 +23,8 @@ export default {
     body: [
       'Mein Name ist Oscar, auch bekannt als OBNM, und meine musikalische Reise erstreckt sich über die Welten von Pop, Elektronik, Folk und Rock.',
       'Ich habe mein Wissen durch das Studium (DAMS) der Black Music vertieft und wurde von der Revolution der digitalen Musik (Master DTV) inspiriert.',
-      'Ich spiele Gitarre und bin mit über 20 Jahren Erfahrung ein Musikproduzent und Fachmann in der Musikindustrie. Meine Fähigkeiten wurden durch zahlreiche Erfahrungen im Bereich der Audio-Produktion bereichert.',
-      'Ich habe als Gitarrist, DJ, Sounddesigner und Audiotechniker für Independent-Filme, Fernsehprogramme (Rai 2), Animationsserien (Gino il Pollo) und Radiosendungen (Radio 3) gearbeitet. Seit mehr als 15 Jahren bin ich Teil des Teams von Steinberg Multimedia Technologies, wo ich Musikern und Produzenten helfe, die Software optimal zu nutzen, um musikalische Produktionen zu verwirklichen.',
+      'Ich spiele Gitarre und bin mit über 20 Jahren Erfahrung ein Musikproduzent und Profi in der Musikindustrie. Meine Fähigkeiten wurden durch zahlreiche Erfahrungen im Bereich der Audio-Produktion bereichert.',
+      'Ich habe als Gitarrist, DJ, Sounddesigner und Audiotechniker für Independent-Filme, Fernsehsendungen (Rai 2), Animationsserien (Gino il Pollo) und Radiosendungen (Radio 3) gearbeitet. Seit mehr als 15 Jahren bin ich Teil des Teams von Steinberg Multimedia Technologies, wo ich Musikern und Produzenten helfe, die Software optimal zu nutzen, um musikalische Produktionen zu verwirklichen.',
       'Musik ist für mich weit mehr als ein Beruf, sie ist ein Instrument zur persönlichen Weiterentwicklung und die Lebensader meines Weges.',
       'Meine Mission ist es, junge Talente zu unterstützen, mein Wissen und meine gesammelten Erfahrungen zu teilen, mit dem Ziel, ein inspirierendes Umfeld zu schaffen, in dem Kreativität und Leidenschaft in ihrer vollen Kraft erblühen können.',
     ],
@@ -34,7 +34,7 @@ export default {
     title: 'Ohne Angst experimentieren',
     body: [
       'Das Pioneer Sound Lab ist nicht nur ein Ort, sondern eine echte Stimmung. Es ist mein persönliches Studio in meinem Zuhause, ein Raum, in dem sich jeder frei fühlen soll, Fehler zu machen, zu experimentieren und Dinge immer wieder auszuprobieren, ohne den Druck, sofort die perfekte Version abliefern zu müssen. Das Ziel ist es, sich von der Last der Perfektion zu befreien und den Fehler als essenziellen Teil des kreativen Prozesses zu akzeptieren.',
-      'Klar, es gibt gelungene und weniger gelungene Aufnahmen. Aber manchmal passiert etwas, das über die Technik hinausgeht. Ein im Flug eingefangener Take, fragil, unvollkommen, lebendig. Einer, den du nicht mehr replizieren kannst, weil er genau zu diesem Moment gehörte.',
+      'Klar, es gibt gelungene und weniger gelungene Aufnahmen. Aber manchmal passiert etwas, das über die Technik hinausgeht. Ein spontan eingefangener Take, fragil, unvollkommen, lebendig. Einer, den du nicht mehr replizieren kannst, weil er genau zu diesem Moment gehörte.',
       'Auch dafür ist das Home-Studio da, einen Raum zu schaffen, in dem diese Momente entstehen können. Ohne Eile, ohne Erwartungen, ohne jemanden, der auf die Uhr schaut. Nur du, deine Musik und die Freiheit zu suchen. Und manchmal entsteht genau dort drin die Magie.',
       'Als Musiker und Produzent ist mein Studiokonzept klar, es muss ein Raum sein, in dem Musik geschrieben, aufgenommen und produziert wird, im Komfort und in der Entspannung eines echten Zuhauses. Eine Umgebung, die nicht auf angemessene akustische Behandlungen zur Isolierung der Räume und auf hochwertige analoge und digitale Ausrüstung verzichten kann, um bestmöglich arbeiten zu können.',
       'Das ist meine Vorstellung vom Studio, ein Raum, in dem Kreativität und Komfort aufeinandertreffen, in dem der Fehler als Chance gesehen wird und jede Arbeitssession zu einem Moment des Wachstums und der Entdeckung werden kann.',
@@ -77,7 +77,7 @@ export default {
     email: 'info@beatpioneer.com',
   },
   footer: {
-    tagline: 'Built Your Music Identity',
+    tagline: 'Build Your Music Identity',
     rights: 'Alle Rechte vorbehalten',
     location: 'Hamburg',
   },
